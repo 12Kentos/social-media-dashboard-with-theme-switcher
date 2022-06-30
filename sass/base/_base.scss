@@ -1,0 +1,73 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-body-background);
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 24vh;
+    background-color: var(--clr-background-highlight);
+    position: absolute;
+    z-index: -1;
+    border-radius: 0 0 2rem 2rem;
+  }
+}
+
+:root {
+  --clr-body-background: #fff;
+  --clr-main-font: #1d1f29;
+  --clr-secondary-font: #63687d;
+  --clr-btn-font: #848bab;
+  --clr-btn-background: #aeb3cb;
+  --clr-btn-background-secondary: #aeb3cb;
+  --clr-btn-switch: #f1f3fa;
+  --clr-card-background: #f1f3fa;
+  --clr-card-facebook: #178ff5;
+  --clr-card-twitter: #1da1f2;
+  --clr-card-youtube: #c4032b;
+  --clr-card-instagram-left: #fdc366;
+  --clr-card-instagram-right: #df4896;
+  --clr-background-highlight: #f7f9ff;
+  --clr-card-background-hover: #e1e4f0;
+
+  --clr-card-increase: #1eb589;
+  --clr-card-decrease: #dc414c;
+}
+
+.darkmode {
+  --clr-body-background: #1d1f29;
+  --clr-main-font: #ffffff;
+  --clr-secondary-font: #8c98c6;
+  --clr-btn-font: #8c98c6;
+  --clr-btn-background: #40db82;
+  --clr-btn-background-secondary: #388fe7;
+  --clr-btn-switch: #252b42;
+  --clr-card-background: #252b42;
+  --clr-card-facebook: #178ff5;
+  --clr-card-twitter: #1da1f2;
+  --clr-card-youtube: #c4032b;
+  --clr-card-instagram-left: #fdc366;
+  --clr-card-instagram-right: #df4896;
+  --clr-background-highlight: #20222f;
+  --clr-card-background-hover: #333a55;
+
+  --clr-card-increase: #1eb589;
+  --clr-card-decrease: #dc414c;
+}

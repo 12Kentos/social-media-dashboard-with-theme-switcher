@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__info">
+        <h1 class="heading-primary">Social Media Dashboard</h1>
+        <div class="header__total-followers">Total Followers: 23,004</div>
+      </div>
+      <div class="header__color-scheme">
+        <p class="header__current-scheme">Dark Mode</p>
+        <input type="checkbox" class="header__color-toggle" />
+      </div>
+    </header>
+
+    <div class="followers">
+      <div class="followers__card followers__card--facebook">
+        <div class="followers__platform">
+          <img
+            src="images/icon-facebook.svg"
+            alt="Facebook Logo"
+            class="followers__platform__logo"
+          />
+          <p class="followers__platform__tag">@nathanf</p>
+        </div>
+        <p class="followers__number">1987</p>
+        <p class="followers__followers">Followers</p>
+        <div class="followers__change followers__change--increase">
+          <img
+            src="images/icon-up.svg"
+            alt="Green Up Arrow"
+            class="followers__change__img"
+          />
+          <p class="followers__change__today">12 Today</p>
+        </div>
+      </div>
+
+      <div class="followers__card followers__card--twitter">
+        <div class="followers__platform">
+          <img
+            src="images/icon-twitter.svg"
+            alt="Twitter Logo"
+            class="followers__platform__logo"
+          />
+          <p class="followers__platform__tag">@nathanf</p>
+        </div>
+        <p class="followers__number">1044</p>
+        <p class="followers__followers">Followers</p>
+        <div class="followers__change followers__change--increase">
+          <img
+            src="images/icon-up.svg"
+            alt="Green Up Arrow"
+            class="followers__change__img"
+          />
+          <p class="followers__change__today">99 Today</p>
+        </div>
+      </div>
+
+      <div class="followers__card followers__card--instagram">
+        <div class="followers__platform">
+          <img
+            src="images/icon-instagram.svg"
+            alt="Instagram Logo"
+            class="followers__platform__logo"
+          />
+          <p class="followers__platform__tag">@realnathanf</p>
+        </div>
+        <p class="followers__number">11k</p>
+        <p class="followers__followers">Followers</p>
+        <div class="followers__change followers__change--increase">
+          <img
+            src="images/icon-up.svg"
+            alt="Green Up Arrow"
+            class="followers__change__img"
+          />
+          <p class="followers__change__today">1099 Today</p>
+        </div>
+      </div>
+
+      <div class="followers__card followers__card--youtube">
+        <div class="followers__platform">
+          <img
+            src="images/icon-youtube.svg"
+            alt="YouTube Logo"
+            class="followers__platform__logo"
+          />
+          <p class="followers__platform__tag">Nathan F.</p>
+        </div>
+        <p class="followers__number">8239</p>
+        <p class="followers__followers">Subscribers</p>
+        <div class="followers__change followers__change--decrease">
+          <img
+            src="images/icon-down.svg"
+            alt="Red Down Arrow"
+            class="followers__change__img"
+          />
+          <p class="followers__change__today">144 Today</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="overview">
+      <h1 class="heading-primary heading-primary--gray">Overview - Today</h1>
+
+      <div class="overview__card__wrapper">
+        <div class="overview__card">
+          <div class="overview__card__top">
+            <p class="overview__card__views">Page Views</p>
+            <img
+              src="images/icon-facebook.svg"
+              alt="Facebook Logo"
+              class="overview__card__logo"
+            />
+          </div>
+          <div class="overview__card__bottom">
+            <p class="overview__card__number">87</p>
+            <div class="overview__card__change">
+              <img
+                src="images/icon-up.svg"
+                alt="Green Up Arrow"
+                class="overview__card__img"
+              />
+              <p class="overview__card__today">3%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview__card">
+          <div class="overview__card__top">
+            <p class="overview__card__views">Likes</p>
+            <img
+              src="images/icon-facebook.svg"
+              alt="Facebook Logo"
+              class="overview__card__logo"
+            />
+          </div>
+          <div class="overview__card__bottom">
+            <p class="overview__card__number">52</p>
+            <div class="overview__card__change">
+              <img
+                src="images/icon-down.svg"
+                alt="Red Down Arrow"
+                class="overview__card__img"
+              />
+              <p class="overview__card__today overview__card__today--red">2%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview__card">
+          <div class="overview__card__top">
+            <p class="overview__card__views">Likes</p>
+            <img
+              src="images/icon-instagram.svg"
+              alt="Instagram Logo"
+              class="overview__card__logo"
+            />
+          </div>
+          <div class="overview__card__bottom">
+            <p class="overview__card__number">5462</p>
+            <div class="overview__card__change">
+              <img
+                src="images/icon-up.svg"
+                alt="Green Up Arrow"
+                class="overview__card__img"
+              />
+              <p class="overview__card__today">2257%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview__card">
+          <div class="overview__card__top">
+            <p class="overview__card__views">Profile Views</p>
+            <img
+              src="images/icon-instagram.svg"
+              alt="Instagram Logo"
+              class="overview__card__logo"
+            />
+          </div>
+          <div class="overview__card__bottom">
+            <p class="overview__card__number">52K</p>
+            <div class="overview__card__change">
+              <img
+                src="images/icon-up.svg"
+                alt="Green Up Arrow"
+                class="overview__card__img"
+              />
+              <p class="overview__card__today">1375%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview__card">
+          <div class="overview__card__top">
+            <p class="overview__card__views">Retweets</p>
+            <img
+              src="images/icon-twitter.svg"
+              alt="Twitter Logo"
+              class="overview__card__logo"
+            />
+          </div>
+          <div class="overview__card__bottom">
+            <p class="overview__card__number">117</p>
+            <div class="overview__card__change">
+              <img
+                src="images/icon-up.svg"
+                alt="Green Up Arrow"
+                class="overview__card__img"
+              />
+              <p class="overview__card__today">303%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview__card">
+          <div class="overview__card__top">
+            <p class="overview__card__views">Likes</p>
+            <img
+              src="images/icon-twitter.svg"
+              alt="Twitter Logo"
+              class="overview__card__logo"
+            />
+          </div>
+          <div class="overview__card__bottom">
+            <p class="overview__card__number">507</p>
+            <div class="overview__card__change">
+              <img
+                src="images/icon-up.svg"
+                alt="Green Up Arrow"
+                class="overview__card__img"
+              />
+              <p class="overview__card__today">553%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview__card">
+          <div class="overview__card__top">
+            <p class="overview__card__views">Likes</p>
+            <img
+              src="images/icon-youtube.svg"
+              alt="Youtube Logo"
+              class="overview__card__logo"
+            />
+          </div>
+          <div class="overview__card__bottom">
+            <p class="overview__card__number">107</p>
+            <div class="overview__card__change">
+              <img
+                src="images/icon-down.svg"
+                alt="Red Down Arrow"
+                class="overview__card__img"
+              />
+              <p class="overview__card__today overview__card__today--red">
+                19%
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="overview__card">
+          <div class="overview__card__top">
+            <p class="overview__card__views">Total Views</p>
+            <img
+              src="images/icon-youtube.svg"
+              alt="Youtube Logo"
+              class="overview__card__logo"
+            />
+          </div>
+          <div class="overview__card__bottom">
+            <p class="overview__card__number">1407</p>
+            <div class="overview__card__change">
+              <img
+                src="images/icon-down.svg"
+                alt="Red Down Arrow"
+                class="overview__card__img"
+              />
+              <p class="overview__card__today overview__card__today--red">
+                12%
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- Social Media Dashboard
+Total Followers: 23,004
+
+Dark Mode
+
+
+
+@nathanf
+1987
+Followers
+12 Today
+
+@nathanf
+1044
+Followers
+99 Today
+
+@realnathanf
+11k
+Followers
+1099 Today
+
+Nathan F.
+8239
+Subscribers
+144 Today
+
+
+
+Overview - Today
+
+Page Views
+87
+3%
+
+Likes
+52
+2%
+
+Likes
+5462
+2257%
+
+Profile Views
+52k
+1375%
+
+Retweets
+117
+303%
+
+Likes
+507
+553%
+
+Likes
+107
+19%
+
+Total Views
+1407
+12% -->

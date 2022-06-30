@@ -1,0 +1,336 @@
+.header {
+  display: flex;
+  margin-top: 3.6rem;
+  padding-bottom: 4.6rem;
+  padding-right: 4rem;
+  margin-left: 4rem;
+  max-width: 111rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__color-scheme {
+    display: flex;
+    gap: 1.3rem;
+    align-items: center;
+  }
+
+  &__total-followers {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.694rem;
+    color: var(--clr-secondary-font);
+  }
+
+  &__current-scheme {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.694rem;
+    color: var(--clr-btn-font);
+  }
+
+  &__color-toggle {
+    position: relative;
+    width: 4.8rem;
+    height: 2.4rem;
+    appearance: none;
+    background-image: linear-gradient(
+      to left,
+      var(--clr-btn-background),
+      var(--clr-btn-background-secondary)
+    );
+    border-radius: 1.2rem;
+    outline: none;
+    transition: 0.5s;
+    box-shadow: inset 0 0 0.5rem rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:checked {
+      &::before {
+        left: 0.35rem;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1.8rem;
+      height: 1.8rem;
+      border-radius: 50%;
+      background-color: var(--clr-btn-switch);
+      left: 2.65rem;
+      top: 0.25rem;
+      box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+      transition: 0.5s;
+    }
+  }
+}
+
+.heading-primary {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.389rem;
+  color: var(--clr-main-font);
+
+  &--gray {
+    color: var(--clr-secondary-font);
+    margin-bottom: 2.4rem;
+  }
+}
+
+.followers {
+  max-width: 111rem;
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+  padding-right: 4rem;
+  margin-left: 4rem;
+  margin-bottom: 4.6rem;
+
+  &__card {
+    max-width: 25.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-card-background);
+    border-radius: 0.5rem;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--clr-card-background-hover);
+    }
+
+    &--facebook {
+      border-top: 4px solid var(--clr-card-facebook);
+    }
+
+    &--twitter {
+      border-top: 4px solid var(--clr-card-twitter);
+    }
+
+    &--instagram {
+      border-top: 4px solid transparent;
+      position: relative;
+
+      &::before {
+        content: "";
+        max-width: 25.5rem;
+        width: 100%;
+        height: 0.4rem;
+        border-radius: 0.5rem 0.5rem 0 0;
+        position: absolute;
+        background: linear-gradient(
+          to right,
+          var(--clr-card-instagram-left),
+          var(--clr-card-instagram-right)
+        );
+        top: -4px;
+      }
+    }
+
+    &--youtube {
+      border-top: 4px solid var(--clr-card-youtube);
+    }
+  }
+
+  &__platform {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 3.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.452rem;
+    color: var(--clr-secondary-font);
+    margin-bottom: 3rem;
+  }
+
+  &__number {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 4.8rem;
+    letter-spacing: -2px;
+    color: var(--clr-main-font);
+    margin-bottom: 0.9rem;
+  }
+
+  &__followers {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.452rem;
+    letter-spacing: 5px;
+    color: var(--clr-secondary-font);
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+  }
+
+  &__change {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.452rem;
+    gap: 0.4rem;
+    margin-bottom: 2.4rem;
+
+    &--increase {
+      color: var(--clr-card-increase);
+    }
+
+    &--decrease {
+      color: var(--clr-card-decrease);
+    }
+  }
+}
+
+.overview {
+  display: flex;
+  margin-top: 3.6rem;
+  padding-bottom: 4.6rem;
+  padding-right: 4rem;
+  margin-left: 4rem;
+  max-width: 111rem;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+
+  &__card {
+    background-color: var(--clr-card-background);
+    border-radius: 0.5rem;
+    max-width: 25.5rem;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--clr-card-background-hover);
+    }
+
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 2.6rem;
+      margin-right: 3.1rem;
+      margin-left: 2.4rem;
+    }
+
+    &__views {
+      color: var(--clr-secondary-font);
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 1.694rem;
+    }
+
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-right: 3.1rem;
+      margin-left: 2.4rem;
+      padding-bottom: 1.9rem;
+      margin-top: 2.1rem;
+    }
+
+    &__number {
+      font-size: 3.2rem;
+      font-weight: 700;
+      line-height: 3.873rem;
+      color: var(--clr-main-font);
+    }
+
+    &__change {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.452rem;
+      color: var(--clr-card-increase);
+    }
+
+    &__today--red {
+      color: var(--clr-card-decrease);
+    }
+  }
+}
+
+.overview__card__wrapper {
+  max-width: 111rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  column-gap: 3rem;
+  row-gap: 2.4rem;
+}
+
+@media (max-width: 51em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 41em) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 35em) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__info {
+      border-bottom: 1px solid var(--clr-btn-font);
+      padding-bottom: 2.4rem;
+    }
+
+    &__color-scheme {
+      margin-top: 1.6rem;
+      justify-content: space-between;
+    }
+
+    &__current-scheme {
+      margin-right: 19.9rem;
+    }
+  }
+
+  .followers {
+    flex-direction: column;
+    align-items: center;
+
+    &__card {
+      max-width: 80vw;
+
+      &--instagram {
+        &::before {
+          max-width: 80vw;
+        }
+      }
+    }
+  }
+
+  .overview {
+    justify-content: center;
+    align-items: center;
+
+    &__card__wrapper {
+      grid-template-columns: 1fr;
+      max-width: 80vw;
+    }
+
+    &__card {
+      max-width: 80vw;
+    }
+  }
+}
